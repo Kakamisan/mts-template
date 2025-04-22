@@ -1,0 +1,11 @@
+{
+  "template_mod:TemplateCharacter": {
+    "NAMES": [
+      "模板角色"
+    ],
+    "TEXT": [
+      "一个模板角色的描述。",
+      "你就是模板心脏？"
+    ]
+  }
+}

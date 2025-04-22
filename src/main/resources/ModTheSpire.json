@@ -1,0 +1,10 @@
+{
+  "modid": "template_mod",
+  "name": "mod名",
+  "author_list": ["mod作者"],
+  "description": "mod描述描述。",
+  "version": "0.0.1",
+  "sts_version": "12-22-2020",
+  "mts_version": "3.23.2",
+  "dependencies": ["basemod"]
+}

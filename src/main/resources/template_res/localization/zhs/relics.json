@@ -1,0 +1,9 @@
+{
+  "template_mod:TemplateRelic": {
+    "NAME": "模板遗物",
+    "FLAVOR": "模板遗物，里面似乎藏着什么。",
+    "DESCRIPTIONS": [
+      "每场战斗开始时，每场战斗开始。"
+    ]
+  }
+}
