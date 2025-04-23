@@ -19,7 +19,7 @@ public class Strike extends CustomEasyCard {
     private static final CardTarget TARGET = CardTarget.ENEMY;
 
     // 一般不改
-    private static final AbstractCard.CardColor COLOR = ModHelper.cardColor1(); //
+    private static final AbstractCard.CardColor COLOR = ModHelper.cardColor1(); // 所属角色
     private static final boolean BETA = false;  // 使用测试卡图
 
     // 不用改

@@ -11,6 +11,7 @@ public class {{{character}}}Relic extends CustomRelic {
 
     // 一般不改
     private static final LandingSound LANDING_SOUND = LandingSound.FLAT;    // 点击音效
+    private static final boolean BETA = false;  // 使用测试卡图
 
     // 不用改
     public static final String ID;
@@ -20,7 +21,7 @@ public class {{{character}}}Relic extends CustomRelic {
     static {
         Class<?> cla = {{{character}}}Relic.class;
         ID = ModHelper.makeID(cla);
-        IMG_PATH = ModHelper.makeRelicImgPath(cla);
+        IMG_PATH = ModHelper.makeRelicImgPath(BETA ? null : cla);
     }
 
     public {{{character}}}Relic() {
