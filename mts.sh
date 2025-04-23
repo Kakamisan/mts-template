@@ -9,8 +9,8 @@ MOD_NAME="模板mod"
 MOD_AUTHOR="mod作者"
 # 你的mod描述
 MOD_DESC="mod描述描述描述。"
-# 你的Steam路径
-STEAM_PATH="C:/Program Files (x86)/Steam/steamapps"
+# 你的Steam路径（斜杆需要转义）
+STEAM_PATH="C:\/Program Files (x86)\/Steam\/steamapps"
 # 你的角色代号名（大写开头）
 CHARACTER="Template"
 # 你的角色代号名的全大写
