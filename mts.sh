@@ -30,4 +30,4 @@ find . -type f \( -name "*.java" -o -name "*.xml" -o -name "*.json" \) -exec sed
 
 # 文件重命名
 find . -type d \( -name "template_mod" -o -name "template_res" \) -exec sh -c 'MOD_ID="'$MOD_ID'"; mv "$0" "${0/template/$MOD_ID}"' {} \;
-find . -type d \( -name "TemplateCharacter" -o -name "TemplateMod" -o -name "TemplateRelic" \) -exec sh -c 'CHARACTER="'$CHARACTER'"; mv "$0" "${0/Template/$CHARACTER}"' {} \;
+find . -type f \( -name "TemplateCharacter.java" -o -name "TemplateMod.java" -o -name "TemplateRelic.java" \) -exec sh -c 'CHARACTER="'$CHARACTER'"; mv "$0" "${0/Template/$CHARACTER}"' {} \;
