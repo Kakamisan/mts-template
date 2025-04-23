@@ -1,4 +1,4 @@
-package template_mod.cards;
+package {{{mod_id}}}_mod.cards;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;

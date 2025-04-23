@@ -1,4 +1,4 @@
-package template_mod.modcore;
+package {{{mod_id}}}_mod.modcore;
 
 import basemod.AutoAdd;
 import basemod.BaseMod;
@@ -10,46 +10,46 @@ import com.google.gson.Gson;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.localization.*;
-import template_mod.cards.Strike;
-import template_mod.characters.TemplateCharacter;
-import template_mod.helpers.ModHelper;
-import template_mod.relics.TemplateRelic;
+import {{{mod_id}}}_mod.cards.Strike;
+import {{{mod_id}}}_mod.characters.{{{character}}}Character;
+import {{{mod_id}}}_mod.helpers.ModHelper;
+import {{{mod_id}}}_mod.relics.{{{character}}}Relic;
 
 import java.nio.charset.StandardCharsets;
 
-import static template_mod.helpers.ModHelper.mod_id;
-import static template_mod.helpers.ModHelper.res_id;
+import static {{{mod_id}}}_mod.helpers.ModHelper.mod_id;
+import static {{{mod_id}}}_mod.helpers.ModHelper.res_id;
 
 @SpireInitializer // 加载mod的注解
-public class TemplateMod implements EditCardsSubscriber, EditStringsSubscriber, EditCharactersSubscriber, EditRelicsSubscriber, EditKeywordsSubscriber {
+public class {{{character}}}Mod implements EditCardsSubscriber, EditStringsSubscriber, EditCharactersSubscriber, EditRelicsSubscriber, EditKeywordsSubscriber {
 
     // 构造方法
-    public TemplateMod() {
+    public {{{character}}}Mod() {
         BaseMod.subscribe(this); // 告诉basemod你要订阅事件
         BaseMod.addColor(
                 ModHelper.cardColor1()
-                , TemplateCharacter.MY_COLOR
-                , TemplateCharacter.MY_COLOR
-                , TemplateCharacter.MY_COLOR
-                , TemplateCharacter.MY_COLOR
-                , TemplateCharacter.MY_COLOR
-                , TemplateCharacter.MY_COLOR
-                , TemplateCharacter.MY_COLOR
-                , TemplateCharacter.BG_ATTACK_512
-                , TemplateCharacter.BG_SKILL_512
-                , TemplateCharacter.BG_POWER_512
-                , TemplateCharacter.ENERGY_ORB
-                , TemplateCharacter.BG_ATTACK_1024
-                , TemplateCharacter.BG_SKILL_1024
-                , TemplateCharacter.BG_POWER_1024
-                , TemplateCharacter.BIG_ORB
-                , TemplateCharacter.SMALL_ORB
+                , {{{character}}}Character.MY_COLOR
+                , {{{character}}}Character.MY_COLOR
+                , {{{character}}}Character.MY_COLOR
+                , {{{character}}}Character.MY_COLOR
+                , {{{character}}}Character.MY_COLOR
+                , {{{character}}}Character.MY_COLOR
+                , {{{character}}}Character.MY_COLOR
+                , {{{character}}}Character.BG_ATTACK_512
+                , {{{character}}}Character.BG_SKILL_512
+                , {{{character}}}Character.BG_POWER_512
+                , {{{character}}}Character.ENERGY_ORB
+                , {{{character}}}Character.BG_ATTACK_1024
+                , {{{character}}}Character.BG_SKILL_1024
+                , {{{character}}}Character.BG_POWER_1024
+                , {{{character}}}Character.BIG_ORB
+                , {{{character}}}Character.SMALL_ORB
         );
     }
 
     // 注解需要调用的方法，必须写
     public static void initialize() {
-        new TemplateMod();
+        new {{{character}}}Mod();
     }
 
     @Override
@@ -68,8 +68,8 @@ public class TemplateMod implements EditCardsSubscriber, EditStringsSubscriber, 
     @Override
     public void receiveEditCharacters() {
         // 向basemod注册人物
-        BaseMod.addCharacter(new TemplateCharacter(CardCrawlGame.playerName), TemplateCharacter.MY_CHARACTER_BUTTON
-                , TemplateCharacter.MY_CHARACTER_PORTRAIT, TemplateCharacter.PlayerColorEnum.TEMPLATE_PLAYER);
+        BaseMod.addCharacter(new {{{character}}}Character(CardCrawlGame.playerName), {{{character}}}Character.MY_CHARACTER_BUTTON
+                , {{{character}}}Character.MY_CHARACTER_PORTRAIT, {{{character}}}Character.PlayerColorEnum.{{{character_up}}}_PLAYER);
     }
 
     public void receiveEditStrings() {
@@ -88,9 +88,9 @@ public class TemplateMod implements EditCardsSubscriber, EditStringsSubscriber, 
     @Override
     public void receiveEditRelics() {
 //        BaseMod.addRelic(new SpecHat(), RelicType.SHARED); // RelicType表示是所有角色都能拿到的遗物，还是一个角色的独有遗物
-        new AutoAdd(mod_id).packageFilter(TemplateRelic.class)
+        new AutoAdd(mod_id).packageFilter({{{character}}}Relic.class)
                 .any(CustomRelic.class, (info, relic) -> {
-                    BaseMod.addRelicToCustomPool(relic, TemplateCharacter.PlayerColorEnum.TEMPLATE_COLOR);
+                    BaseMod.addRelicToCustomPool(relic, {{{character}}}Character.PlayerColorEnum.{{{character_up}}}_COLOR);
                 });
     }
 

@@ -1,4 +1,4 @@
-package template_mod.helpers;
+package {{{mod_id}}}_mod.helpers;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -6,14 +6,14 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
-import template_mod.characters.TemplateCharacter;
+import {{{mod_id}}}_mod.characters.{{{character}}}Character;
 
 import java.util.ArrayList;
 
 public class ModHelper {
 
-    public static final String mod_id = "template_mod";
-    public static final String res_id = "template_res";
+    public static final String mod_id = "{{{mod_id}}}_mod";
+    public static final String res_id = "{{{mod_id}}}_res";
 
     public static String makeID(Class<?> cla) {
         return makeID(cla.getName());
@@ -104,6 +104,6 @@ public class ModHelper {
 
     // 1号角色颜色
     public static AbstractCard.CardColor cardColor1() {
-        return TemplateCharacter.PlayerColorEnum.TEMPLATE_COLOR;
+        return {{{character}}}Character.PlayerColorEnum.{{{character_up}}}_COLOR;
     }
 }

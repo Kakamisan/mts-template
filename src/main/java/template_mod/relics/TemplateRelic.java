@@ -1,10 +1,10 @@
-package template_mod.relics;
+package {{{mod_id}}}_mod.relics;
 
 import basemod.abstracts.CustomRelic;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
-import template_mod.helpers.ModHelper;
+import {{{mod_id}}}_mod.helpers.ModHelper;
 
-public class TemplateRelic extends CustomRelic {
+public class {{{character}}}Relic extends CustomRelic {
 
     // 需要配置
     private static final RelicTier RELIC_TIER = RelicTier.STARTER;  // 遗物类型
@@ -18,12 +18,12 @@ public class TemplateRelic extends CustomRelic {
 
     // 不用改
     static {
-        Class<?> cla = TemplateRelic.class;
+        Class<?> cla = {{{character}}}Relic.class;
         ID = ModHelper.makeID(cla);
         IMG_PATH = ModHelper.makeRelicImgPath(cla);
     }
 
-    public TemplateRelic() {
+    public {{{character}}}Relic() {
         super(ID, ImageMaster.loadImage(IMG_PATH), RELIC_TIER, LANDING_SOUND);
     }
 

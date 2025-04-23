@@ -1,8 +1,8 @@
 {
-  "modid": "template_mod",
-  "name": "mod名",
-  "author_list": ["mod作者"],
-  "description": "mod描述描述。",
+  "modid": "{{{mod_id}}}_mod",
+  "name": "{{{mod_name}}}",
+  "author_list": ["{{{mod_author}}}"],
+  "description": "{{{mod_desc}}}",
   "version": "0.0.1",
   "sts_version": "12-22-2020",
   "mts_version": "3.23.2",

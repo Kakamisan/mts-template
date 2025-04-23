@@ -1,11 +1,11 @@
 {
-  "template_mod:TemplateCharacter": {
+  "{{{mod_id}}}_mod:{{{character}}}Character": {
     "NAMES": [
-      "模板角色"
+      "{{{character_name}}}"
     ],
     "TEXT": [
-      "一个模板角色的描述。",
-      "你就是模板心脏？"
+      "{{{character_name}}}的角色描述。",
+      "面对心脏说的话，你就是心脏？"
     ]
   }
 }

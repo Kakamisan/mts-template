@@ -1,4 +1,4 @@
-package template_mod.cards;
+package {{{mod_id}}}_mod.cards;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -8,7 +8,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import template_mod.helpers.ModHelper;
+import {{{mod_id}}}_mod.helpers.ModHelper;
 
 public class Strike extends CustomEasyCard {
 

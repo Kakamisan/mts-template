@@ -1,6 +1,6 @@
 {
-  "template_mod:WavePower": {
-    "NAME": "模板能力",
+  "{{{mod_id}}}_mod:{{{character}}}Power": {
+    "NAME": "一个能力",
     "DESCRIPTIONS": [
       "回合结束时，回合结束。"
     ]

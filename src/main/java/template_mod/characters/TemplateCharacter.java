@@ -1,4 +1,4 @@
-package template_mod.characters;
+package {{{mod_id}}}_mod.characters;
 
 import basemod.abstracts.CustomPlayer;
 import com.badlogic.gdx.graphics.Color;
@@ -18,16 +18,16 @@ import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
-import template_mod.cards.*;
-import template_mod.helpers.ModHelper;
-import template_mod.relics.*;
-import static template_mod.helpers.ModHelper.res_id;
+import {{{mod_id}}}_mod.cards.*;
+import {{{mod_id}}}_mod.helpers.ModHelper;
+import {{{mod_id}}}_mod.relics.*;
+import static {{{mod_id}}}_mod.helpers.ModHelper.res_id;
 
 import java.util.ArrayList;
 
 // 继承CustomPlayer类
-public class TemplateCharacter extends CustomPlayer {
-    public static final String ID = ModHelper.makeID(TemplateCharacter.class);
+public class {{{character}}}Character extends CustomPlayer {
+    public static final String ID = ModHelper.makeID({{{character}}}Character.class);
     // 角色颜色
     public static final Color MY_COLOR = new Color(249.0F / 255.0F, 210.0F / 255.0F, 43.0F / 255.0F, 1.0F);
     // 人物选择界面按钮的图片
@@ -81,8 +81,8 @@ public class TemplateCharacter extends CustomPlayer {
     // 人物的本地化文本，如卡牌的本地化文本一样，如何书写见下
     public static final CharacterStrings characterStrings = CardCrawlGame.languagePack.getCharacterString(ID);
 
-    public TemplateCharacter(String name) {
-        super(name, PlayerColorEnum.TEMPLATE_PLAYER, ORB_TEXTURES, ORB_VFX, LAYER_SPEED, null, null);
+    public {{{character}}}Character(String name) {
+        super(name, PlayerColorEnum.{{{character_up}}}_PLAYER, ORB_TEXTURES, ORB_VFX, LAYER_SPEED, null, null);
 
         // 人物对话气泡的大小，如果游戏中尺寸不对在这里修改（libgdx的坐标轴左下为原点）
         this.dialogX = (this.drawX + 0.0F * Settings.scale);
@@ -120,7 +120,7 @@ public class TemplateCharacter extends CustomPlayer {
     // 初始遗物的ID，可以先写个原版遗物凑数
     public ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<>();
-        retVal.add(TemplateRelic.ID);
+        retVal.add({{{character}}}Relic.ID);
         return retVal;
     }
 
@@ -149,7 +149,7 @@ public class TemplateCharacter extends CustomPlayer {
     // 你的卡牌颜色（这个枚举在最下方创建）
     @Override
     public AbstractCard.CardColor getCardColor() {
-        return PlayerColorEnum.TEMPLATE_COLOR;
+        return PlayerColorEnum.{{{character_up}}}_COLOR;
     }
 
     // 翻牌事件出现的你的职业牌（一般设为打击）
@@ -209,7 +209,7 @@ public class TemplateCharacter extends CustomPlayer {
     // 创建人物实例，照抄
     @Override
     public AbstractPlayer newInstance() {
-        return new TemplateCharacter(this.name);
+        return new {{{character}}}Character(this.name);
     }
 
     // 第三章面对心脏说的话（例如战士是“你握紧了你的长刀……”之类的）
@@ -249,12 +249,12 @@ public class TemplateCharacter extends CustomPlayer {
     public static class PlayerColorEnum {
         // 修改为你的颜色名称，确保不会与其他mod冲突
         @SpireEnum
-        public static PlayerClass TEMPLATE_PLAYER;
+        public static PlayerClass {{{character_up}}}_PLAYER;
 
         // ***将CardColor和LibraryType的变量名改为你的角色的颜色名称，确保不会与其他mod冲突***
         // ***并且名称需要一致！***
         @SpireEnum
-        public static AbstractCard.CardColor TEMPLATE_COLOR;
+        public static AbstractCard.CardColor {{{character_up}}}_COLOR;
     }
 
     public static class PlayerLibraryEnum {
@@ -263,12 +263,12 @@ public class TemplateCharacter extends CustomPlayer {
 
         // 这个变量未被使用（呈现灰色）是正常的
         @SpireEnum
-        public static CardLibrary.LibraryType TEMPLATE_COLOR;
+        public static CardLibrary.LibraryType {{{character_up}}}_COLOR;
     }
 
     public static class PlayerCardTags {
         // 自定义卡牌TAG
         @SpireEnum
-        public static AbstractCard.CardTags TEMPLATE_CARD_TAG;
+        public static AbstractCard.CardTags {{{character_up}}}_CARD_TAG;
     }
 }
