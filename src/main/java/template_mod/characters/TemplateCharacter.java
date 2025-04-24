@@ -27,31 +27,11 @@ import java.util.ArrayList;
 
 // 继承CustomPlayer类
 public class {{{character}}}Character extends CustomPlayer {
-    public static final String ID = ModHelper.makeID({{{character}}}Character.class);
-    // 角色颜色
-    public static final Color MY_COLOR = new Color(249.0F / 255.0F, 210.0F / 255.0F, 43.0F / 255.0F, 1.0F);
+    public static final String ID = ModHelper.makeID("{{{character}}}Character");
     // 人物选择界面按钮的图片
     public static final String MY_CHARACTER_BUTTON = res_id + "/img/char/Character_Button.png";
     // 人物选择界面的立绘
     public static final String MY_CHARACTER_PORTRAIT = res_id + "/img/char/Character_Portrait.png";
-    // 攻击牌的背景（小尺寸）
-    public static final String BG_ATTACK_512 = res_id + "/img/512/bg_attack_512.png";
-    // 能力牌的背景（小尺寸）
-    public static final String BG_POWER_512 = res_id + "/img/512/bg_power_512.png";
-    // 技能牌的背景（小尺寸）
-    public static final String BG_SKILL_512 = res_id + "/img/512/bg_skill_512.png";
-    // 在卡牌和遗物描述中的能量图标
-    public static final String SMALL_ORB = res_id + "/img/char/small_orb.png";
-    // 攻击牌的背景（大尺寸）
-    public static final String BG_ATTACK_1024 = res_id + "/img/1024/bg_attack.png";
-    // 能力牌的背景（大尺寸）
-    public static final String BG_POWER_1024 = res_id + "/img/1024/bg_power.png";
-    // 技能牌的背景（大尺寸）
-    public static final String BG_SKILL_1024 = res_id + "/img/1024/bg_skill.png";
-    // 在卡牌预览界面的能量图标
-    public static final String BIG_ORB = res_id + "/img/char/card_orb.png";
-    // 小尺寸的能量图标（战斗中，牌堆预览）
-    public static final String ENERGY_ORB = res_id + "/img/char/cost_orb.png";
     // 火堆的人物立绘（行动前）
     public static final String MY_CHARACTER_SHOULDER_1 = res_id + "/img/char/shoulder1.png";
     // 火堆的人物立绘（行动后）

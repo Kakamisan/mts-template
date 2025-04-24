@@ -19,9 +19,9 @@ public class {{{character}}}Relic extends CustomRelic {
 
     // 不用改
     static {
-        Class<?> cla = {{{character}}}Relic.class;
-        ID = ModHelper.makeID(cla);
-        IMG_PATH = ModHelper.makeRelicImgPath(BETA ? null : cla);
+        String name = "{{{character}}}Relic";
+        ID = ModHelper.makeID(name);
+        IMG_PATH = ModHelper.makeRelicImgPath(BETA ? "Beta" : name);
     }
 
     public {{{character}}}Relic() {

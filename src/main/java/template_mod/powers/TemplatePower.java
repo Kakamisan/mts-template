@@ -34,8 +34,8 @@ public class {{{character}}}Power extends AbstractPower {
         this.amount = Amount;
 
 //        // 添加一大一小两张能力图
-//        String path128 = ModHelper.makePowerImgPath84(BETA ? null : {{{character}}}Power.class);
-//        String path48 = ModHelper.makePowerImgPath32(BETA ? null : {{{character}}}Power.class);
+//        String path128 = ModHelper.makePowerImgPath84(BETA ? "Beta" : "{{{character}}}Power");
+//        String path48 = ModHelper.makePowerImgPath32(BETA ? "Beta" : "{{{character}}}Power");
 //        this.region128 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path128), 0, 0, 84, 84);
 //        this.region48 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path48), 0, 0, 32, 32);
 

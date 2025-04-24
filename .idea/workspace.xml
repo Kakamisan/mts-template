@@ -1,4 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PropertiesComponent">{}</component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3d0d5c2f-fb0c-413e-86ae-eaf06c2ff2a6" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/template_mod/cards/Strike.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/template_mod/cards/Strike.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/template_mod/characters/TemplateCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/template_mod/characters/TemplateCharacter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/template_mod/helpers/ModHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/template_mod/helpers/ModHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/template_mod/modcore/TemplateMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/template_mod/modcore/TemplateMod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/template_mod/powers/TemplatePower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/template_mod/powers/TemplatePower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/template_mod/relics/TemplateRelic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/template_mod/relics/TemplateRelic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template_res/localization/zhs/cards.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template_res/localization/ZHS/cards.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template_res/localization/zhs/characters.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template_res/localization/ZHS/characters.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template_res/localization/zhs/keywords.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template_res/localization/ZHS/keywords.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template_res/localization/zhs/powers.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template_res/localization/ZHS/powers.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template_res/localization/zhs/relics.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template_res/localization/ZHS/relics.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2w8SuuQsiYqrOKT9hZ1ObkErn4m" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
 </project>

@@ -29,10 +29,10 @@ public class Strike extends CustomEasyCard {
 
     // 不用改
     static {
-        Class<?> cla = Strike.class;
-        ID = ModHelper.makeID(cla);
+        String name = "Strike";
+        ID = ModHelper.makeID(name);
         CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
-        IMG_PATH = ModHelper.makeCardImgPath(TYPE, BETA ? null : cla);
+        IMG_PATH = ModHelper.makeCardImgPath(TYPE, BETA ? "Beta" : name);
     }
 
     public Strike() {

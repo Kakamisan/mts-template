@@ -16,16 +16,12 @@ public class ModHelper {
     public static final String res_id = "{{{mod_id}}}_res";
 
     // 各种卡 能力等等的ID
-    public static String makeID(Class<?> cla) {
-        return makeID(cla.getName());
-    }
-
     public static String makeID(String name) {
         return mod_id + ":" + name;
     }
 
     // 卡牌图片路径
-    public static String makeCardImgPath(AbstractCard.CardType type, Class<?> cla) {
+    public static String makeCardImgPath(AbstractCard.CardType type, String name) {
         String type_name;
         switch (type) {
             case ATTACK:
@@ -42,25 +38,21 @@ public class ModHelper {
             default:
                 throw new IllegalStateException("Unexpected value: " + type);
         }
-        String name = cla != null ? cla.getName() : "Beta";
         return res_id + "/img/cards/" + type_name + "/" + name + ".png";
     }
 
     // 遗物图片路径
-    public static String makeRelicImgPath(Class<?> cla) {
-        String name = cla != null ? cla.getName() : "Beta";
+    public static String makeRelicImgPath(String name) {
         return res_id + "/img/relics/" + name + ".png";
     }
 
     // 能力大图路径 STSPicture 提供的是84x84
-    public static String makePowerImgPath84(Class<?> cla) {
-        String name = cla != null ? cla.getName() : "Beta";
+    public static String makePowerImgPath84(String name) {
         return res_id + "/img/powers/" + name + "84.png";
     }
 
     // 能力小图路径 STSPicture 提供的是32x32
-    public static String makePowerImgPath32(Class<?> cla) {
-        String name = cla != null ? cla.getName() : "Beta";
+    public static String makePowerImgPath32(String name) {
         return res_id + "/img/powers/" + name + "32.png";
     }
 
